@@ -1,0 +1,18 @@
+{
+  "name": "cnn_news",
+  "version": "1.0.0",
+  "description": "CNN News title page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Leonid Kaidashov",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
+    "scss": "^0.2.4"
+  }
+}

@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixins";
+
+.missed{
+    @include back-black();
+    .missed-container{
+        width: $container;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 64px;
+        @media screen and (max-width:1380px) {
+            width: 95%;
+        }
+        .missed-container__title{
+            @include title2();
+            color: $color1;
+        }
+        .missed_box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media screen and (max-width:960px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            .missed-leftside{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width:960px) {
+                    width: 100%;
+                }
+                .missed-leftside__pic{
+                    width: 100%;
+                }
+                .missed-leftside__pic_hover:hover{
+                    opacity: 0.7;
+                    transition: 0.2s;
+                }
+                .missed-leftside__credit{
+                    align-self: flex-end;
+                    color: $color2;
+                    font-family: $font3;
+                    font-size: 10px;
+                    margin: 4px 0px 8px 0px;
+                }
+                .missed-leftside__title{
+                    @include title3();
+                    color: $color1;
+                    margin: 0;
+                    .missed-leftside__link{
+                        text-decoration: none;
+                        color: $color1;
+                    }
+                }
+                .missed-leftside__title_hover:hover{
+                    text-decoration: underline;
+                }
+            }
+            .missed-rightside{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px ;
+                @media screen and (max-width:960px) {
+                    width: 100%;
+                    margin: 30px 0px 0px 0px;
+                }
+                .missed-rightside__text{
+                    @include links();
+                    letter-spacing: 0.5px;
+                    margin: 0px 0px 12px 0px;
+                    border-bottom: 1px solid grey;
+                    padding-bottom: 12px;
+                }
+                .missed-rightside__text:last-of-type{
+                    border: none;
+                }
+                .missed-rightside__text_hover:hover{
+                    text-decoration: underline;
+                }
+                .missed-rightside__link{
+                    text-decoration: none;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}

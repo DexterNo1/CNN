@@ -1,0 +1,152 @@
+@import "variables";
+@import "mixins";
+
+.header-background{
+    @include back-black();
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .header-container{
+        width: $container;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width:1380px) {
+            width: 95%;
+        }
+        .header-leftside{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 12px 0 12xp;
+            :nth-child(14){
+                display: none;
+            }
+            @media screen and (max-width:1380px) {
+                :nth-child(13),:nth-child(12){
+                    display: none;
+                }
+                :nth-child(14){
+                    display: block;
+                }
+            }
+            @media screen and (max-width:1250px) {
+                :nth-child(11){
+                    display: none;
+                }
+            }
+            @media screen and (max-width:1165px) {
+                :nth-child(10){
+                display: none;
+            }  
+            }
+            @media screen and (max-width:1090px) {
+                :nth-child(9){
+                display: none;
+            }   
+            }
+            @media screen and (max-width:970px) {
+                :nth-child(8){
+                display: none;
+            }
+            }
+            @media screen and (max-width:960px) {
+                :nth-child(14),:nth-child(7),:nth-child(6),:nth-child(5),:nth-child(4){
+                    display: none;
+            }    
+            }
+            .header-leftside__link{
+                text-decoration: none;
+            }
+            .header-leftside__menu{
+                width: 24px;
+                height: 24px;
+                fill: $color1;
+                margin-right: 24px;
+                @media screen and (max-width:960px) {
+                    padding-left: 10px;
+                }
+            }
+            .header-leftside__cnnlogo{
+                fill: $logocolor;
+                margin-right: 12px;
+                cursor: pointer;
+            }
+            .header-leftside__item{
+                @include headerleft();
+                padding: 0 12px 0 12px;
+            }
+            .header-leftside__item_hide{
+                display: none;
+            }
+        }
+        .header-rigthside{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 80px;
+            @media screen and (max-width:1380px) {
+                padding-left: 0px;
+            }
+            .header-rigthside__link{
+                text-decoration: none;
+            }
+            .header-rightside__item{
+                width: 100%;
+                color: $color2;
+                font-family: $font3;
+            }
+            .header-rightside__item:first-of-type{
+                margin-right: 14px;
+                @media screen and (max-width:480px) {
+                    margin-right: 0px;
+                }
+            }
+            .header-rightside__item_hide{
+                @media screen and (max-width:480px) {
+                    display: none;
+                }
+            }
+            .header-rightside__search{
+                fill: $color2;
+                width: 24px;
+                height: 24px;
+                margin-left: 8px;
+            }
+            .header-rightside__search_hide{
+                @media screen and (max-width:960px) {
+                    display: none;
+                }
+            }
+            .header-rightside__button{
+                width: 70px;
+                border: 1px solid $color1;
+                border-radius: 8px;
+                padding: 4px 8px;
+                font-size: $fs7;
+                line-height: 20px;
+                height: 32px;
+                font-weight: 700;
+                background-color: transparent;
+                color: $color1;
+                font-family: $font2;
+                margin-left: 16px;
+                cursor: pointer;
+                @media screen and (max-width:960px) {
+                    margin: 0;
+                }
+            }
+            .header-rightside__button_hover:hover{
+                background-color: rgb(46, 46, 46);
+            }
+            .header-rightside__button_hide{
+                @media screen and (max-width:480px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

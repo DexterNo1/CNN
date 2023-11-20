@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN News</title>
+    <link href="https://db.onlinewebfonts.com/a/z8L8f2fiLmGZ11RZVMB361Fz" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="styles/styles.scss">
+    <link rel="stylesheet" href="/src/styles/header.scss">
+    <link rel="stylesheet" href="/src/styles/topics.scss">
+    <link rel="stylesheet" href="/src/styles/main-news.scss">
+    <link rel="stylesheet" href="/src/styles/news2.scss">
+    <link rel="stylesheet" href="/src/styles/news3.scss">
+    <link rel="stylesheet" href="/src/styles/watchit.scss">
+    <link rel="stylesheet" href="/src/styles/photos.scss">
+    <link rel="stylesheet" href="/src/styles/paid.scss">
+    <link rel="stylesheet" href="/src/styles/missed.scss">
+    <link rel="stylesheet" href="/src/styles/search.scss">
+    <link rel="stylesheet" href="/src/styles/bottom_links.scss">
+    <link rel="stylesheet" href="/src/styles/footer.scss">
+</head>
+<body>
+    <header class="header-background">
+        <div class="header-container">
+            <nav class="header-leftside">
+                <a class="header-leftside__link" href="#"><svg class="header-leftside__menu" width="40" height="40" role="img" viewBox="0 0 64 63" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" aria-haspopup="true" aria-expanded="false"><path d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path><path d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path><path d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"></path></svg></a>
+                <svg class="header-leftside__cnnlogo" width="40" height="40" viewBox="0 0 240 240" fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect><path d="M.31-.07v240h240V-.07ZM86.54,135.29V92.51c0-16.1,20.81-23.83,31.82-5.12.8,1.35,18.14,31.22,18.14,31.22V92.51c0-16.1,20.8-23.83,31.81-5.12.8,1.35,18.14,31.22,18.14,31.22V76.79h10.38V147a2.11,2.11,0,0,1-1.51,2.14c-1.1.3-2.26-.38-3.11-1.82-.17-.28-9-15.46-17.48-30.13L159.17,90.4c-2.18-3.7-5.43-4.35-7.74-3.72a6.23,6.23,0,0,0-4.55,6.13V147a2.12,2.12,0,0,1-1.51,2.14c-1.11.3-2.27-.38-3.11-1.82-.15-.25-8.34-14.36-16.25-28-10.08-17.38-16.7-28.78-16.8-28.95-2.18-3.71-5.44-4.35-7.77-3.72a6.24,6.24,0,0,0-4.56,6.13v53.05a2.9,2.9,0,0,1-2.72,2.71H67.23a28.64,28.64,0,0,1,0-57.28h14v10.36H67.35a18.28,18.28,0,1,0,0,36.56H83.68A2.84,2.84,0,0,0,86.54,135.29Zm124.77,12.05c0,16.1-20.81,23.83-31.82,5.13-.79-1.35-18.14-31.23-18.14-31.23v26.1c0,16.1-20.8,23.83-31.81,5.13-.8-1.35-18.14-31.23-18.14-31.23v24.61c0,11.17-6.63,17.22-17,17.22H67.25a43.14,43.14,0,0,1,0-86.28h14V87.15h-14a32.78,32.78,0,1,0,0,65.56H94.16a7,7,0,0,0,6.86-6.85V92.81a2.1,2.1,0,0,1,1.51-2.13c1.1-.3,2.26.38,3.11,1.82l16.79,28.93c9.76,16.83,16.17,27.88,16.25,28,2.19,3.7,5.45,4.35,7.78,3.71A6.22,6.22,0,0,0,151,147V92.82a2.11,2.11,0,0,1,1.49-2.14c1.09-.3,2.24.38,3.08,1.82l15.56,26.81,17.49,30.15c1.71,2.9,4.09,3.93,6.16,3.93a6,6,0,0,0,1.61-.22A6.23,6.23,0,0,0,201,147V76.79h10.34Z"></path></svg>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item header-leftside__item_hide">US</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">World</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Politics</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Business</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Opinion</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Health</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Entertainment</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Style</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Travel</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Sports</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">Video</div></a>
+                <a class="header-leftside__link" href="#"><div class="header-leftside__item">More</div></a>
+            </nav>
+            <nav class="header-rigthside">
+                <a class="header-rigthside__link" href="#"><div class="header-rightside__item header-rightside__item_hide">Audio</div></a>
+                <a class="header-rigthside__link" href="#"><div class="header-rightside__item">Live TV</div></a>
+                <a class="header-rigthside__link" href="#"><svg class="header-rightside__search header-rightside__search_hide" width="40" height="40" role="img" viewBox="0 0 64 64" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><path d="M55.3,51.89,42.46,39a19.22,19.22,0,1,0-3.38,3.43L51.9,55.29a2.38,2.38,0,0,0,3.4,0A2.42,2.42,0,0,0,55.3,51.89ZM11.2,27.28a16,16,0,1,1,16,16.07A16.07,16.07,0,0,1,11.2,27.28Z"></path></svg></a>
+                <button class="header-rightside__button header-rightside__button_hover header-rightside__button_hide" type="button">Log in</button></a>
+            </nav>
+        </div>
+    </header>
+    <section class="topics-container">
+        <div class="topics">
+            <a class="topics__link topics__link_hover" href="#">Israel-Hamas war</a>
+            <div class="topics__divider"></div>
+            <a class="topics__link topics__link_hover" href="#">Trump’s insurrection </a>
+            <div class="topics__divider"></div>
+            <a class="topics__link topics__link_hover" href="#">Latest from Ukraine</a>
+            <div class="topics__divider"></div>
+            <a class="topics__link topics__link_hover" href="#">Renewed fighting in Myanmar</a>
+            <div class="topics__divider"></div>
+            <a class="topics__link topics__link_hover" href="#">Elon Musk</a>
+            <div class="topics__divider"></div>
+            <a class="topics__link topics__link_hover" href="#">Italian ski resort</a>
+            <div class="topics__divider"></div>
+            <a class="topics__link topics__link_hover" href="#">Snoop Dogg</a>
+        </div>
+    </section>
+    <main class="news-background">
+        <div class="news-container">
+            <div class="news-leftside">
+                <h1 class="news-leftside__title news-leftside__title_hover"><a class="news-leftside__link" href="#">Israeli military: Second hostage's body recovered near Al-Shifa Hospital</a></h1>
+                <a class="news-leftside__link" href="#"><img class="news-leftside__mainpic news-leftside__mainpic_hover" src="https://media.cnn.com/api/v1/images/stellar/prod/231116115331-al-shifa-hospital-111223.jpg" alt="al-shifa-hospital"></a>
+                <h3 class="news-leftside__title2 leftside__title2_hover"><a class="news-leftside__link" href="#">A statement said the body of a 19-year-old corporal in the IDF had been transferred to Israeli territory. The circumstances of the two hostages' deaths are unknown.</a></h3>
+                <ul class="news-leftside-list">
+                    <a class="news-leftside__link" href="#"><li class="news-leftside-list__item news-leftside-list__item_hover">UN Human Rights chief calls for independent probe into Al-Shifa hospital claims</li></a>
+                    <a class="news-leftside__link" href="#"><li class="news-leftside-list__item news-leftside-list__item_hover">Israel is tightening its control of northern Gaza. But there is no clear post-war strategy in sight</li></a>
+                    <a class="news-leftside__link" href="#"><li class="news-leftside-list__item news-leftside-list__item_hover"><svg class="news-leftside-list__videoicon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.333c-4.779 0-8.667 3.888-8.667 8.667S7.221 20.667 12 20.667s8.667-3.888 8.667-8.667S16.779 3.333 12 3.333M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m-1.064-6.793l4.61-2.74a.715.715 0 00-.003-1.23l-4.61-2.712a.714.714 0 00-1.076.616v5.452c0 .554.603.897 1.08.614"></path></svg>Man films family’s journey after being forced from Gaza City</li></a>
+                    <a class="news-leftside__link" href="#"><li class="news-leftside-list__item news-leftside-list__item_hover">‘Where will I leave these children, on the street?’ Struggle of disabled Palestinians</li></a>
+                    <a class="news-leftside__link" href="#"><li class="news-leftside-list__item news-leftside-list__item_hover"><svg class="news-leftside-list__videoicon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.333c-4.779 0-8.667 3.888-8.667 8.667S7.221 20.667 12 20.667s8.667-3.888 8.667-8.667S16.779 3.333 12 3.333M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m-1.064-6.793l4.61-2.74a.715.715 0 00-.003-1.23l-4.61-2.712a.714.714 0 00-1.076.616v5.452c0 .554.603.897 1.08.614"></path></svg>‘Cruelly mutilated’: Witness describes assault of women on Oct. 7</li></a>
+                    <a class="news-leftside__link" href="#"><li class="news-leftside-list__item news-leftside-list__item_hover">Opinion Why Israel’s divide-and-rule approach towards Palestinians backfired</li></a>
+                </ul>
+            </div>
+            <div class="news-rigtside1">
+                <a class="news-rigtside1__link" href="#"><img class="news-rigtside1__pic news-rigtside1__pic_hover" src="./images/main-news/starship.jpg" alt="starship"></a>
+                <h3 class="news-rightside1__title news-rightside1__title_hover"><a class="news-rigtside1__link" href="#">The most powerful rocket ever built just went farther than it had ever gone, then was lost</a></h3>
+                <ul class="news-rightside1-list">
+                    <a class="news-rightside1__link" href="#"><li class="news-rightside1-list__item news-rightside1-list__item_hover">UN Human Rights chief calls for independent probe into Al-Shifa hospital claims</li></a>
+                    <a class="news-rightside1__link" href="#"><li class="news-rightside1-list__item news-rightside1-list__item_hover"><svg class="news-rightside1-list__videoicon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.333c-4.779 0-8.667 3.888-8.667 8.667S7.221 20.667 12 20.667s8.667-3.888 8.667-8.667S16.779 3.333 12 3.333M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m-1.064-6.793l4.61-2.74a.715.715 0 00-.003-1.23l-4.61-2.712a.714.714 0 00-1.076.616v5.452c0 .554.603.897 1.08.614"></path></svg>Man films family’s journey after being forced from Gaza City</li></a>
+                </ul>
+                <a class="news-rigtside1__link" href="#"><img class="news-rigtside1__pic news-rigtside1__pic_hover" src="./images/main-news/ski.jpg" alt="ski"></a>
+                <h3 class="news-rightside1__title news-rightside1__title_hover"><a class="news-rigtside1__link" href="#">It was once a skiing paradise. Now it’s a climate change battleground</a></h3>
+                <ul class="news-rightside1-list">
+                    <a class="news-rightside1__link" href="#"><li class="news-rightside1-list__item news-rightside1-list__item_hover">Taylor Swift postpones concert in Rio de Janeiro due to high temperatures</li></a>
+                    <a class="news-rightside1__link" href="#"><li class="news-rightside1-list__item news-rightside1-list__item_hover">As Earth’s temperature rises, so do deaths among people with mental health problems</li></a>
+                    <a class="news-rightside1__link" href="#"><li class="news-rightside1-list__item news-rightside1-list__item_hover">Microplastics could trigger cloud formation and affect the weather, new study suggests</li></a>
+                    <a class="news-rightside1__link" href="#"><li class="news-rightside1-list__item news-rightside1-list__item_hover"><svg class="news-rightside1-list__videoicon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.333c-4.779 0-8.667 3.888-8.667 8.667S7.221 20.667 12 20.667s8.667-3.888 8.667-8.667S16.779 3.333 12 3.333M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m-1.064-6.793l4.61-2.74a.715.715 0 00-.003-1.23l-4.61-2.712a.714.714 0 00-1.076.616v5.452c0 .554.603.897 1.08.614"></path></svg>This deceptively simple term could be key to the planet’s survival</li></a>
+                </ul>
+            </div>
+            <div class="news-rigtside2">
+                <a class="news-rigtside2__link" href="#"><img class="news-rigtside2__pic news-rigtside2__pic_hover" src="./images/main-news/polit.jpg" alt="polit"></a>
+                <h3 class="news-rightside2__title news-rightside2__title_hover"><a class="news-rigtside2__link" href="#">Catch up on today’s global news</a></h3>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">French senator under investigation on suspicion of drugging MP</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">Dwindling ammunition, a jailed artist and Kyiv’s new ‘foothold’ in the south: The latest from Ukraine</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">Rescuers in India tunnel collapse change appoach as frantic efforts hit one-week mark</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">AI used against candidates in this country’s election</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">Renewed fighting in Myanmar has displaced 26,000 people since Monday, UN says</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover"><svg class="news-rightside2-list__videoicon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3.333c-4.779 0-8.667 3.888-8.667 8.667S7.221 20.667 12 20.667s8.667-3.888 8.667-8.667S16.779 3.333 12 3.333M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m-1.064-6.793l4.61-2.74a.715.715 0 00-.003-1.23l-4.61-2.712a.714.714 0 00-1.076.616v5.452c0 .554.603.897 1.08.614"></path></svg>‘Do you still really view this as a win?’: Collins presses Trump attorney</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">Liberia’s President George Weah concedes victory after tight run-off election</p></a>
+                <a class="news-rigtside2__link" href="#"><p class="news-rightside2__article news-rightside2__article_hover">Analysis: Joe Biden is facing a near-historic deficit for an incumbent</p></a>
+            </div>
+        </div>
+    </main>
+    <section class="news2">
+        <div class="news2-container">
+            <div class="news2-box">
+                <div class="news2-box__separator"></div>
+                <div class="news2-box__red"></div>
+                <h4 class="news2-box__minititle">More top stories</h4>
+                <a class="news2-box__link" href="#"><img class="news2-box__picture news2-box__picture_hover" src="./images/news2/elon.jfif" alt="elon"></a>
+                <h2 class="news2-box__title news2-box__title_hover"><a class="news2-box__link" href="#">With antisemitic tweet, Elon Musk reveals his ‘actual truth’</a></h2>
+                <a class="news2-box__link" href="#"><p class="news2-box__article news2-box__article_hover">From Sin City to Sports Central: How Las Vegas is betting big on a lucrative industry</p></a>
+                <a class="news2-box__link" href="#"><p class="news2-box__article news2-box__article_hover">akeaways from the blockbuster Trump ‘insurrectionist ban’ ruling</p></a>
+                <a class="news2-box__link" href="#"><p class="news2-box__article news2-box__article_hover">Philippines bans American traveler for life, accusing him of writing profanities on immigration form</p></a>
+                <a class="news2-box__link" href="#"><p class="news2-box__article news2-box__article_hover">Former first lady Rosalynn Carter enters hospice care</p></a>
+                <a class="news2-box__link" href="#"><p class="news2-box__article news2-box__article_hover">‘Viva Las Vegas,’ sings Max Verstappen as he wins thrilling race</p></a>
+            </div>
+            <div class="news2-box2">
+                <div class="news2-box2__separator"></div>
+                <div class="news2-box2__red"></div>
+                <h4 class="news2-box2__minititle">Featured</h4>
+                <a class="news2-box2__link" href="#"><img class="news2-box2__picture news2-box2__picture_hover" src="./images/news2/miss.jpg" alt="miss"></a>
+                <h2 class="news2-box2__title news2-box2__title_hover"><a class="news2-box__link" href="#">Miss Nicaragua wins 2023 Miss Universe pageant</a></h2>
+                <div class="news2-minibox">
+                    <a class="news2-minibox__linkpic" href="#"><img class="news2-minibox__pic news2-minibox__pic_hover" src="./images/news2/cup.jpg" alt="cup"></a>
+                    <a class="news2-minibox__link" href="#"><p class="news2-minibox__article news2-minibox__article_hover">One game from immortality. A nation expects as India take on Australia in a final like no other</p></a>
+                </div>
+                <div class="news2-minibox">
+                    <a class="news2-minibox__linkpic" href="#"><img class="news2-minibox__pic news2-minibox__pic_hover" src="./images/news2/people.jpg" alt="people"></a>
+                    <a class="news2-minibox__link" href="#"><p class="news2-minibox__article news2-minibox__article_hover">With its 100th anniversary just a year away, here's a look at the history of the Macy's Thanksgiving Day Parade</p></a>
+                </div>
+            </div>
+            <div class="news2-box">
+                <div class="news2-minibox news2-minibox_margin">
+                    <a class="news2-minibox__linkpic" href="#"><img class="news2-minibox__pic news2-minibox__pic_hover" src="./images/news2/corn.jfif" alt="corn"></a>
+                    <a class="news2-minibox__link" href="#"><p class="news2-minibox__article news2-minibox__article_hover">This corn was down to its last two cobs. Now it could help farmers grow food in the climate crisis</p></a>
+                </div>
+                <div class="news2-minibox">
+                    <a class="news2-minibox__linkpic" href="#"><img class="news2-minibox__pic news2-minibox__pic_hover" src="./images/news2/jelly.jpg" alt="jelly"></a>
+                    <a class="news2-minibox__link" href="#"><p class="news2-minibox__article news2-minibox__article_hover">Jelly Roll’s career is a life lesson for us all</p></a>
+                </div>
+                <div class="news2-minibox">
+                    <a class="news2-minibox__linkpic" href="#"><img class="news2-minibox__pic news2-minibox__pic_hover" src="./images/news2/eat.jpg" alt="eat"></a>
+                    <a class="news2-minibox__link" href="#"><p class="news2-minibox__article news2-minibox__article_hover">Don’t serve disordered eating to your teens this holiday season</p></a>
+                </div>
+                <div class="news2-minibox">
+                    <a class="news2-minibox__linkpic" href="#"><img class="news2-minibox__pic news2-minibox__pic_hover" src="./images/news2/police.jpg" alt="police"></a>
+                    <a class="news2-minibox__link" href="#"><p class="news2-minibox__article news2-minibox__article_hover">See police race across golf course in pursuit of suspect trapped in porta potty</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="featured-container">
+            <h1 class="featured-container__title">Featured Sections</h1>
+            <div class="featured-bigbox">
+                <div class="featured-box">
+                    <div class="featured-box__separator"></div>
+                    <div class="featured-box__red"></div>
+                    <h4 class="featured-box__minititle">CNN BUSINESS</h4>
+                    <a class="featured-box__link" href="#"><img class="featured-box__picture featured-box__picture_hover" src="./images/news3/openAI.jpg" alt="OpenAI"></a>
+                    <h2 class="featured-box__title featured-box__title_hover"><a class="featured-box__link" href="#">OpenAI drama continues: Sam Altman may be mulling a return to the company</a></h2>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Here’s why the Big Three won’t need to raise car prices to pay for these labor deals</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Major advertisers flee X, deepening crisis at Elon Musk’s social media site</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Why people including Walmart’s CEO are sounding the alarm about deflation</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">A record number of $50 bills were printed last year. It’s not why you think</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Target is testing a new self-checkout policy</p></a>
+                </div>
+                <div class="featured-box featured-box_margin">
+                    <div class="featured-box__separator"></div>
+                    <div class="featured-box__red"></div>
+                    <h4 class="featured-box__minititle">CNN TRAVEL</h4>
+                    <a class="featured-box__link" href="#"><img class="featured-box__picture featured-box__picture_hover" src="./images/news3/pilot.jpeg" alt="pilot"></a>
+                    <h2 class="featured-box__title featured-box__title_hover"><a class="featured-box__link" href="#">As a kid she posed with her pilot dad in the cockpit. Years later they recreated the photo, with a twist</a></h2>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">The night train revolution has been hailed as an alternative to airplanes. Here’s how that’s going</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">The best Christmas markets taking place around the world in 2023</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">There’s probably no monster in Loch Ness. But we did find one of its best-kept secrets</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">This US couple sold their house and moved to Italy for good</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">The untouched skiing paradise on the edge of Europe</p></a>
+                </div>
+                <div class="featured-box">
+                    <div class="featured-box__separator"></div>
+                    <div class="featured-box__red"></div>
+                    <h4 class="featured-box__minititle">STYLE</h4>
+                    <a class="featured-box__link" href="#"><img class="featured-box__picture featured-box__picture_hover" src="./images/news3/kate.jpg" alt="kate"></a>
+                    <h2 class="featured-box__title featured-box__title_hover"><a class="featured-box__link" href="#">Kate Beckinsale’s party dress goes viral for its hidden meaning</a></h2>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Russian artist receives seven-year sentence for anti-war protest</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">A Dutch designer is knitting jumpers from human hair</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Most expensive Ferrari ever auctioned fetches $51.7M</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Look of the Week: ‘Succession’ star Brian Cox is no longer dressing for the boardroom</p></a>
+                    <a class="featured-box__link" href="#"><p class="featured-box__article featured-box__article_hover">Prince’s iconic white, ruffled ‘Purple Rain’ shirt is up for sale</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="watchit">
+        <div class="watchit-container">
+            <h2 class="watchit-container__title">Watch It</h2>
+            <div class="watchit-items">
+                <a class="watchit-items__link" href="#"><div class="watchit-item">
+                    <img class="watchit-item__pic watchit-item__pic_hover" src="./images/watchit/wave.webp" alt="wave">
+                    <h3 class="watchit-item__title watchit-item__title_hover">Watch Australian woman break world record for surfing giant wave</h3>
+                </div></a>
+                <a class="watchit-items__link" href="#"><div class="watchit-item">
+                    <img class="watchit-item__pic watchit-item__pic_hover" src="./images/watchit/migrant.webp" alt="migrant">
+                    <h3 class="watchit-item__title watchit-item__title_hover">'I do not condone this': Migrants enter US through homeowner's backyard</h3>
+                </div></a>
+                <a class="watchit-items__link" href="#"><div class="watchit-item">
+                    <img class="watchit-item__pic watchit-item__pic_hover" src="./images/watchit/sheep.webp" alt="sheep">
+                    <h3 class="watchit-item__title watchit-item__title_hover">Sheep rescued after spending years at bottom of sea cliff</h3>
+                </div></a>
+                <a class="watchit-items__link" href="#"><div class="watchit-item">
+                    <img class="watchit-item__pic watchit-item__pic_hover" src="./images/watchit/shark.webp" alt="shark">
+                    <h3 class="watchit-item__title watchit-item__title_hover">World's largest species of fish spotted in rare appearance</h3>
+                </div></a>
+            </div>
+        </div>
+    </section>
+    <section class="photos">
+        <div class="photos-container">
+            <h2 class="photos-container__title">Photos You Should See</h2>
+            <div class="photos-bigbox">
+                <div class="photos-box">
+                    <a class="photos-box__link" href="#">
+                        <div class="photos-item">
+                            <img class="photos-item__pic photos-item__pic_hover" src="./images/photos/jordan.jpg" alt="jordan">
+                            <h3 class="photos-item__title photos-item__title_hover">Inside Michael Jordan’s slice of paradise</h3>
+                        </div>
+                    </a>
+                    <a class="photos-box__link" href="#">
+                        <div class="photos-item">
+                            <img class="photos-item__pic photos-item__pic_hover" src="./images/photos/shark.jpg" alt="shark">
+                            <h3 class="photos-item__title photos-item__title_hover">Six bull sharks made their home on a golf course. Then they vanished</h3>
+                        </div>
+                    </a>
+                    <a class="photos-box__link" href="#">
+                        <div class="photos-item">
+                            <img class="photos-item__pic photos-item__pic_hover" src="./images/photos/pirelli.jpg" alt="pirelli">
+                            <h3 class="photos-item__title photos-item__title_hover">Behind the scenes of the latest Pirelli calendar</h3>
+                        </div>
+                    </a>
+                    <a class="photos-box__link" href="#">
+                        <div class="photos-item">
+                            <img class="photos-item__pic photos-item__pic_hover" src="./images/photos/dish.jpg" alt="dish">
+                            <h3 class="photos-item__title photos-item__title_hover">The most delicious Turkish dishes</h3>
+                        </div>
+                    </a>
+                    <a class="photos-box__link" href="#">
+                        <div class="photos-item">
+                            <img class="photos-item__pic photos-item__pic_hover" src="./images/photos/guy.jpg" alt="guy">
+                            <h3 class="photos-item__title photos-item__title_hover">The most dangerous extreme sport you’ve never heard of</h3>
+                        </div>
+                    </a>
+                    <a class="photos-box__link" href="#">
+                        <div class="photos-item">
+                            <img class="photos-item__pic photos-item__pic_hover" src="./images/photos/house.jpg" alt="house">
+                            <h3 class="photos-item__title photos-item__title_hover">The architects from one end of the world</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="photos-blank"></div>
+            </div>
+        </div>
+    </section>
+    <section class="paid">
+        <div class="paid-container">
+            <h2 class="paid-container__title">Paid Content</h2>
+            <div class="paid-items">
+                <a class="paid-items__link" href="#"><div class="paid-item">
+                    <img class="paid-item__pic paid-item__pic_hover" src="./images/paid/tv.webp" alt="tv">
+                    <h3 class="paid-item__title paid-item__title_hover">Only $49 to get all the TV channels? It's now possible</h3>
+                    <h4 class="paid-item__subtitle">TV Superboost</h4>
+                </div></a>
+                <a class="paid-items__link" href="#"><div class="paid-item">
+                    <img class="paid-item__pic paid-item__pic_hover" src="./images/paid/nixon.webp" alt="nixon">
+                    <h3 class="paid-item__title paid-item__title_hover">Your IQ Is 140 If You Can Name 10 Of These People</h3>
+                    <h4 class="paid-item__subtitle">Quizdict</h4>
+                </div></a>
+                <a class="paid-items__link" href="#"><div class="paid-item">
+                    <img class="paid-item__pic paid-item__pic_hover" src="./images/paid/tooth.webp" alt="tooth">
+                    <h3 class="paid-item__title paid-item__title_hover">Incredible toothbrush is all the rage in Belarus</h3>
+                    <h4 class="paid-item__subtitle">Teeth Care</h4>
+                </div></a>
+                <a class="paid-items__link" href="#"><div class="paid-item">
+                    <img class="paid-item__pic paid-item__pic_hover" src="./images/paid/boat.webp" alt="boat">
+                    <h3 class="paid-item__title paid-item__title_hover">Billionaire Cowboy Owner Pays $250m For New Super Yacht</h3>
+                    <h4 class="paid-item__subtitle">Mansion Global</h4>
+                </div></a>
+            </div>
+        </div>
+    </section>
+    <section class="missed">
+        <div class="missed-container">
+            <h1 class="missed-container__title">In Case You Missed It</h1>
+            <div class="missed_box">
+                <div class="missed-leftside">
+                    <a class="missed-leftside__piclink" href="#"><img class="missed-leftside__pic missed-leftside__pic_hover" src="./images/missed/galaxy.jpg" alt="galaxy"></a>
+                    <p class="missed-leftside__credit">ESA</p>
+                    <h2 class="missed-leftside__title missed-leftside__title_hover"><a class="missed-leftside__link" href="#">Hundreds of thousands of galaxies fill a single image taken by new telescope</a></h2>
+                </div>
+                <div class="missed-rightside">
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">Trial confirms heart benefits of Wegovy, but is weight loss responsible - or something else?</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">The water has turned a shocking shade of magenta in this Hawaii refuge</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">China blames Canada for 'malicious, provocative' moves after close midair intercepts over South China Sea</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">You can rent Martha's Stewart's farm guesthouse — for just $11.23</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">Caster Semenya says taking testosterone-reducing medication was 'hell'</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">Inside Dolly Parton's new resort lodge in the Tennessee mountains</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">CNN Exclusive: Chinese jet fired flares close to submarine-hunting helicopter in South China Sea, Canadian Navy says</a></h5>
+                    <h5 class="missed-rightside__text missed-rightside__text_hover"><a class="missed-rightside__link" href="#">Mosquitoes are driving these birds to extinction. With only 5 left in the wild, scientists are racing to save the species</a></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="search-background">
+        <div class="search-background__separator"></div>
+        <form class="search-form">
+            <div class="search-container">
+                <input class="search-container__typefield" type="text" placeholder="Search CNN..">
+                <button class="search-container__button" type="submit">Search<span><svg class="search-container__arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span></button>
+                <svg class="search-container__search" width="40" height="40" role="img" viewBox="0 0 64 64" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><path d="M55.3,51.89,42.46,39a19.22,19.22,0,1,0-3.38,3.43L51.9,55.29a2.38,2.38,0,0,0,3.4,0A2.42,2.42,0,0,0,55.3,51.89ZM11.2,27.28a16,16,0,1,1,16,16.07A16.07,16.07,0,0,1,11.2,27.28Z"></path></svg>
+            </div>
+        </form>
+    </section>
+    <section class="bottom-links">
+        <div class="bottom-links-container">
+            <button class="bottom-links-container__button" type="button">
+                <svg class="bottom-links-container__avatar" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="User Avatar" role="img"><path d="M12 20.674a8.654 8.654 0 01-6.483-2.92c.168-.397.523-.758 1.067-1.076 1.334-.782 3.268-1.23 5.305-1.23 2.027 0 3.955.445 5.288 1.22.628.365.998.787 1.125 1.283A8.649 8.649 0 0112 20.674m1.521-7.203c-3.033 1.496-6.04-1.51-4.544-4.543a2.831 2.831 0 011.282-1.282c3.032-1.491 6.035 1.512 4.543 4.543a2.833 2.833 0 01-1.28 1.282m1.69-9.564c2.334.85 4.161 2.752 4.958 5.106.974 2.873.47 5.65-.941 7.773-.307-.486-.765-.912-1.382-1.27-.912-.53-2.054-.922-3.303-1.155a4.642 4.642 0 001.89-4.755 4.567 4.567 0 00-3.745-3.62 4.648 4.648 0 00-5.442 4.574c0 1.571.787 2.96 1.986 3.8-1.258.235-2.407.63-3.323 1.167-.536.314-.953.674-1.256 1.076A8.617 8.617 0 013.326 12c0-5.821 5.765-10.322 11.885-8.093m.112-1.368A10.052 10.052 0 002.539 15.321a9.611 9.611 0 006.138 6.14A10.052 10.052 0 0021.461 8.679a9.611 9.611 0 00-6.138-6.14"></path></svg>
+            </button>
+            <button class="bottom-links-container__button" type="button">Log In</button>
+            <div class="bottom-links-container__separator"></div>
+            <a class="bottom-links-container__link" href="#">Live TV</a>
+            <a class="bottom-links-container__link" href="#">Audio</a>
+            <div class="bottom-links-container__separator"></div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">World</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Africa</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Americas</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Asia</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Australia</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">China</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Europe</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">India</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Middle East</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">United Kingdom</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">US Politics</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">The Biden Presidency</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Facts First</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">2024 Elections</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Business</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Markets</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Tech</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Media</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Calculators</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Videos</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Health</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Life, But Better</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Fitness</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Food</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Sleep</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Mindfulness</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Relationships</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Entertainment</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Movies</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Television</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Celebrity</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Tech</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Innovate</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Gadget</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Foreseeable Future</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Mission: Ahead</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Upstarts</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Work Transformed</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Innovative Cities</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Style</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Arts</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Design</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Fashion</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Architecture</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Luxury</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Beauty</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Video</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Travel</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Destinations</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Food & Drink</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Stay</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">News</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Videos</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Sports</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Football</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Tennis</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Golf</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Motorsport</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">US Sports</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Olympics</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Climbing</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Esports</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Hockey</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Sports</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Football</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Tennis</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Golf</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Motorsport</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">US Sports</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Olympics</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Climbing</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Esports</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Hockey</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link botlinks-box-list__link_hover" href="#">Videos</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Live TV</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Digital Studios</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">CNN Films</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">HLN</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">TV Schedule</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">TV Shows A-Z</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">CNNVR</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Features</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">As Equals</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Call to Earth</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Freedom Project</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Impact Your World</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Inside Africa</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">2 Degrees</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">CNN Heroes</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">All Features</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link" href="#">Weather</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Climate</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Wildfire Tracker</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Video</a></li>
+                </ul>
+            </div>
+            <div class="botlinks-box">
+                <h2 class="botlinks-box__title botlinks-box__title_hover"><a class="botlinks-box-list__link botlinks-box-list__link_hover" href="#">More</a></h2>
+                <ul class="botlinks-box-list">
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover botlinks-box-list__item__hover"><a class="botlinks-box-list__link" href="#">Photos</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Longform</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Investigations</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">CNN Profiles</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">CNN Leadership</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">CNN Newsletters</a></li>
+                    <li class="botlinks-box-list__item botlinks-box-list__item_hover"><a class="botlinks-box-list__link" href="#">Work for CNN</a></li>
+                </ul>
+            </div>
+        </div>   
+    </section>
+    <footer class="footer-background">
+        <div class="footer-container">
+        <div class="footer__separator"></div>
+        <div class="footer-box">
+            <div class="footer-leftside">
+                <a class="footer-leftside__link" href="#"><svg class="footer-leftside__logo" width="40" height="40" viewBox="0 0 240 240" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect><path d="M.31-.07v240h240V-.07ZM86.54,135.29V92.51c0-16.1,20.81-23.83,31.82-5.12.8,1.35,18.14,31.22,18.14,31.22V92.51c0-16.1,20.8-23.83,31.81-5.12.8,1.35,18.14,31.22,18.14,31.22V76.79h10.38V147a2.11,2.11,0,0,1-1.51,2.14c-1.1.3-2.26-.38-3.11-1.82-.17-.28-9-15.46-17.48-30.13L159.17,90.4c-2.18-3.7-5.43-4.35-7.74-3.72a6.23,6.23,0,0,0-4.55,6.13V147a2.12,2.12,0,0,1-1.51,2.14c-1.11.3-2.27-.38-3.11-1.82-.15-.25-8.34-14.36-16.25-28-10.08-17.38-16.7-28.78-16.8-28.95-2.18-3.71-5.44-4.35-7.77-3.72a6.24,6.24,0,0,0-4.56,6.13v53.05a2.9,2.9,0,0,1-2.72,2.71H67.23a28.64,28.64,0,0,1,0-57.28h14v10.36H67.35a18.28,18.28,0,1,0,0,36.56H83.68A2.84,2.84,0,0,0,86.54,135.29Zm124.77,12.05c0,16.1-20.81,23.83-31.82,5.13-.79-1.35-18.14-31.23-18.14-31.23v26.1c0,16.1-20.8,23.83-31.81,5.13-.8-1.35-18.14-31.23-18.14-31.23v24.61c0,11.17-6.63,17.22-17,17.22H67.25a43.14,43.14,0,0,1,0-86.28h14V87.15h-14a32.78,32.78,0,1,0,0,65.56H94.16a7,7,0,0,0,6.86-6.85V92.81a2.1,2.1,0,0,1,1.51-2.13c1.1-.3,2.26.38,3.11,1.82l16.79,28.93c9.76,16.83,16.17,27.88,16.25,28,2.19,3.7,5.45,4.35,7.78,3.71A6.22,6.22,0,0,0,151,147V92.82a2.11,2.11,0,0,1,1.49-2.14c1.09-.3,2.24.38,3.08,1.82l15.56,26.81,17.49,30.15c1.71,2.9,4.09,3.93,6.16,3.93a6,6,0,0,0,1.61-.22A6.23,6.23,0,0,0,201,147V76.79h10.34Z" transform="translate(-0.31 0.07)"></path></svg></a>
+                <a class="footer-leftside__link" href="#"><div class="footer-leftside__item">US</div></a>
+            </div>
+            <div class="footer-rightside">
+                <a class="footer-rightside__link" href="#"><div class="footer-rightside__item1">Audio</div></a>
+                <a class="footer-rightside__link" href="#"><div class="footer-rightside__item1">Live TV</div></a>
+                <div class="footer-rightside__divider"></div>
+                <p class="footer-rightside__item">Follow CNN</p>
+                <div class="footer-rightside-icons">
+                    <svg class="footer-rightside__icon footer-rightside__icon_hover" aria-label="Facebook" width="64" height="64" viewBox="0 0 64 64" fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><path d="M56,5.1H8c-1.6,0-3,1.4-3,3v48.8c0,1.7,1.3,3,3,3h25.9V38.7h-7v-8.3h7v-6.1 c0-7.1,4.3-10.9,10.5-10.9c3,0,5.9,0.2,6.7,0.3v7.7h-4.7c-3.4,0-4.1,1.6-4.1,4v5h8.1l-1,8.3h-7v21.2H56c1.6,0,3-1.4,3-3V8.1 C59,6.4,57.7,5.1,56,5.1"></path></svg></a>
+                    <svg class="footer-rightside__icon footer-rightside__icon_hover" aria-label="Twitter" width="64" height="64" viewBox="0 0 64 64" fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><path d="M60,15.2c-2.1,0.9-4.3,1.5-6.6,1.7c2.4-1.4,4.2-3.6,5.1-6.1c-2.2,1.3-4.7,2.2-7.3,2.7 c-2.1-2.2-5.1-3.5-8.4-3.5c-6.3,0-11.5,5-11.5,11.1c0,0.9,0.1,1.7,0.3,2.5C22,23.2,13.6,18.8,7.9,12c-1,1.6-1.6,3.5-1.6,5.6 c0,3.9,2,7.3,5.1,9.2c-1.9-0.1-3.7-0.6-5.2-1.4v0.1c0,5.4,4,9.9,9.2,10.9c-1,0.3-2,0.4-3,0.4c-0.7,0-1.5-0.1-2.2-0.2 c1.5,4.4,5.7,7.6,10.7,7.7c-3.9,3-8.9,4.8-14.3,4.8c-0.9,0-1.8-0.1-2.7-0.2c5.1,3.2,11.1,5,17.6,5c21.1,0,32.7-16.9,32.7-31.6 c0-0.5,0-1,0-1.4C56.5,19.4,58.5,17.4,60,15.2"></path></svg></a>
+                    <svg class="footer-rightside__icon footer-rightside__icon_hover" aria-label="Instagram" width="64" height="64" viewBox="0 0 64 64" fill="" xmlns="https://www.w3.org/2000/svg" aria-hidden="true"><path d="M47,13.2c-1.9,0-3.5,1.6-3.5,3.6s1.6,3.6,3.5,3.6s3.5-1.6,3.5-3.6S49,13.2,47,13.2 L47,13.2z M31.9,23c-5.1,0-9.3,4.3-9.3,9.5s4.2,9.5,9.3,9.5s9.3-4.3,9.3-9.5S37,23,31.9,23L31.9,23z M31.9,46.7 c-7.7,0-14-6.4-14-14.2s6.3-14.2,14-14.2s14,6.4,14,14.2S39.6,46.7,31.9,46.7L31.9,46.7z M15.7,8.8c-3.9,0-7,3.2-7,7.1v33.2 c0,3.9,3.1,7.1,7,7.1h32.7c3.9,0,7-3.2,7-7.1V15.9c0-3.9-3.1-7.1-7-7.1C48.4,8.8,15.7,8.8,15.7,8.8z M48.3,60.9H15.7 C9.2,60.9,4,55.6,4,49.1V15.9C4,9.4,9.2,4.1,15.7,4.1h32.7C54.8,4.1,60,9.4,60,15.9v33.2C60,55.6,54.8,60.9,48.3,60.9L48.3,60.9z"></path></svg></a>
+                </div>
+                <button class="footer-rightside__button footer-rightside__button_hover">Log In</button>
+            </div>
+        </div>
+        <div class="footer__separator"></div>
+        <div class="footer-links">
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Terms of Use</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Privacy Policy</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Cookie Settings</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Ad Choices</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Accessibility & CC</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">About</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Newsletters</a>
+            <a class="footer-leftside__link footer-leftside__link_hover" href="#">Transcripts</a>
+        </div>
+        <p class="footer-text">© 2023 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved.<br>
+        CNN Sans ™ & © 2016 Cable News Network.</p>
+    </div>
+    </footer>
+</body>
+</html>
